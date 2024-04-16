@@ -3,14 +3,14 @@ const cactus = document.getElementById('cactus');
 
 document.addEventListener('keydown', function(event) {
     jump();
-})
+});
 
 function jump () {
-    if (dino.classList) {
+    if (dino.classList != 'jump') {
         dino.classList.add('jump')
     }
 
-    setTimeouut (function(){
+    setTimeouut (function() {
         dino.classList.remove('jump')
     }, 300)
 }
