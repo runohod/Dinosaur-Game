@@ -10,16 +10,16 @@ function jump () {
         dino.classList.add('jump')
     }
 
-    setTimeouut (function() {
+    setTimeout (function() {
         dino.classList.remove('jump')
-    }, 300)
+    }, 600)
 }
 
 let isAlive = setInterval (function() {
     let dinoTop = perseInt(window.getComputedStyle(dino).getPropertyValue('top'));
-    let cacrusLeft = perseInt(window.getComputedStyle(cacttus).getPropertyValue('left'));
+    let cactusLeft = perseInt(window.getComputedStyle(cacttus).getPropertyValue('left'));
 
-    if (cactuLeft , 50 && cactusLeft > 0 && dinoTop >= 140) {
+    if (cactuLeft < 50 && cactusLeft > 0 && dinoTop >= 140) {
         alert('GAME OVER')
     }
-}, 10)
+}, 10) 
